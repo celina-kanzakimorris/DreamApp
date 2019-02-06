@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+         <!--   FRAMEWORK 7 STYLESHEET  -->
+        <link rel="stylesheet" href="css/framework7.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+
+        <title>Dream App</title>
+
+    </head>
+    
+    <body>
+        <div id="app">
+            <div class="panel panel-left">
+                <h2>Menu</h2>
+                ...Panel content goes here...
+            </div>
+
+            <div class="panel panel-right">
+                <h2>Settings</h2>
+                ...Panel content goes here...
+            </div>
+
+            <div class="view view-main">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="left">
+                            <a href="#" data-panel="left" class="panel-open">Left</a>
+
+                        </div>
+                        <div class="right">
+                            <a href="#" data-panel="right" class="panel-open">Right</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="page" data-name="home">
+
+                    <div class="page-content">
+                        <!-- scrollable page content -->
+
+                    </div> <!-- end of page content -->
+                </div> <!-- end page -->
+            </div> <!-- end main view -->
+        </div> <!-- end app -->
+        <script type="text/javascript" src="cordova.js"></script>
+
+         <!--  FRAMEWORK7 JS -->
+        <script src="js/framework7.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
