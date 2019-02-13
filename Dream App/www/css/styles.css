@@ -12,6 +12,14 @@ body, html{
 	padding-right: 20px;
 }
 
+.panel-left{
+	padding-left: 20px;
+}
+
+.panel-right{
+	padding-left: 20px;
+}
+
 h1{
 	text-align: center;
 }
