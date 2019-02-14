@@ -12,7 +12,12 @@ body, html{
 
 #container{
 	background-image: url("../images/realm-of-dreams.jpg");
+	/* image from: https://www.publicdomainpictures.net/en/view-image.php?image=150581&picture=realm-of-dreams */
 }
+
+/* https://www.publicdomainpictures.net/en/view-image.php?image=165014&picture=realm-of-dreams-28 */
+/* https://www.publicdomainpictures.net/en/view-image.php?image=165095&picture=planet-fantasy-7 */
+/* https://www.publicdomainpictures.net/en/view-image.php?image=165090&picture=planet-fantasy-2 */
 
 .panel-open{
 	padding-left: 20px;
