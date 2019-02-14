@@ -1,10 +1,32 @@
 var app = new Framework7({
-	root: "#app", /* this is the app element in html */
-})
+	root: '#app', /* this is the app element in html */
+	
+
+	routes: [
+		{
+			path: '/',
+			url: 'index.html',
+		},
+		{
+			path: '/page2/',
+			url: 'pages/page2.html/',
+		}
+	]
+
+
+
+
+});
+
 
 var $$ = Dom7;
 
 var mainView = app.views.create('.view-main');
+
+
+$$(document).on('page:init', '.page[data-name="page2"]',function(e){
+	
+});
 
 $(document).ready(function(){
 var quoteSource = [
@@ -27,7 +49,7 @@ var quoteSource = [
 	'<p>Do not spoil what you have by desiring what you have not; remember that what you now have was once among the things you only hoped for. -Epicurus</p>',
 	'<p>The future belongs to those who believe in the beauty of their dreams. -Eleanor Roosevelt</p>',
 	'<p>Every great dream begins with a dreamer. Always remember, you have within you the strength, the patience, and the passion to reach for the stars to change the world. -Harriet Tubman</p>',
-	'<p>The only thing worse than starting something and failing … is not starting something. -Seth Godin</p>"',
+	'<p>The only thing worse than starting something and failing … is not starting something. -Seth Godin</p>',
 	'<p>You don’t have to see the whole staircase, just take the first step. -Martin Luther King, Jr.</p>',
 	'<p>Be miserable. Or motivate yourself. Whatever has to be done, it’s always your choice. -Wayne Dyer</p>',
 	'<p>Dream no small dreams for they have no power to move the hearts of men. -Johann Wolfgang von Goethe</p>',
@@ -64,11 +86,9 @@ var quoteSource = [
 	'<p>A journey of a thousand miles must begin with a single step. -Lao Tzu</p>',
 	'<p>20 years from now you will be more disappointed by the things that you didn’t do than by the ones you did do. So throw off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover. -Mark Twain</p>'
 	];
-	// $$(document).on('page-init', function(){
-		$("#quoteButton").on("click", function(){
-			var rand = Math.floor(Math.random() * 56);
-			$("#quoteContainer").html(quoteSource[rand]);
-		});
-	// });
+	$("#quoteButton").on("click", function(){
+		var rand = Math.floor(Math.random() * 56);
+		$("#quoteContainer").html(quoteSource[rand]);
+	});
 });
 

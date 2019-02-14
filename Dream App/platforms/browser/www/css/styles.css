@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
+
 *{
 	box-sizing: border-box;
 }
@@ -5,4 +7,77 @@
 body, html{
 	height: 100%;
 	margin: 0;
+}
+
+
+#container{
+	background-image: url("../images/realm-of-dreams.jpg");
+}
+
+.panel-open{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.panel-left{
+	padding-left: 20px;
+}
+
+.panel-right{
+	padding-left: 20px;
+}
+
+.panel-right a, .panel-left a{
+	text-decoration: underline;
+}
+
+h1{
+	text-align: center;
+	margin: 0;
+}
+
+#container{
+	margin: 0;
+	padding-bottom: 200px;
+	width: 100%;
+}
+
+#container h1{
+	text-align: center;
+	color: #ffffff;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+#quoteContainer{
+	width: 100%;
+	margin-top: 150px;
+	margin-bottom: 100px;
+	text-align: center;
+	height: 80px;
+	font-size: 20px;
+}
+
+#quoteContainer p{
+	font-family: 'Poppins';
+	font-weight: 700;
+}
+
+#buttonContainer{
+	text-align: center;
+}
+
+#quoteButton{
+	width: 200px;
+	border: 2px solid #1B4657;
+	border-radius: 12px;
+	color: #045;
+	font-weight: bold;
+	padding: 15px;
+	text-align: center;
+}
+
+
+img{
+	width: 50%;
 }

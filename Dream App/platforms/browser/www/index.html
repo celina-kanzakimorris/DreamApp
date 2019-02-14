@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"> -->
          <!--   FRAMEWORK 7 STYLESHEET  -->
         <link rel="stylesheet" href="css/framework7.min.css">
         <link rel="stylesheet" href="css/styles.css">
@@ -11,16 +11,16 @@
 
     </head>
     
-    <body>
+    <body class="color-theme-black">
         <div id="app">
             <div class="panel panel-left">
-                <h2>Menu</h2>
-                ...Panel content goes here...
+                <h2>Home</h2>
+                <a class="link back" href="#"> Quote of the day </a>
             </div>
 
             <div class="panel panel-right">
                 <h2>Settings</h2>
-                ...Panel content goes here...
+                <a class="link" href="/page2/"> Set a background image </a>
             </div>
 
             <div class="view view-main">
@@ -38,6 +38,23 @@
                 <div class="page" data-name="home">
 
                     <div class="page-content">
+                       
+                       <div id="container">
+                           <h1>Daily Quote</h1>
+
+
+                            <div id="quoteContainer">
+                                <p></p>
+                           </div>
+
+                           <div id="buttonContainer">
+                            <a href="#" id="quoteButton">Today's Quote!</a>
+                        </div>
+
+                       </div>
+                       
+                       
+                        
                         <!-- scrollable page content -->
 
                     </div> <!-- end of page content -->
@@ -48,6 +65,7 @@
 
          <!--  FRAMEWORK7 JS -->
         <script src="js/framework7.min.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>
