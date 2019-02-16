@@ -9,24 +9,27 @@ var app = new Framework7({
 		},
 		{
 			path: '/page2/',
-			url: 'pages/page2.html/',
+			url: 'pages/page2.html',
 		}
 	]
-
-
-
-
 });
-
 
 var $$ = Dom7;
 
 var mainView = app.views.create('.view-main');
 
+var myPhotoBrowser = app.photoBrowser.create({
+	photos:[
+		'images/planet-fantasy-2.jpg',
+		'images/planet-fantasy-7.jpg',
+		'images/realm-of-dreams-28.jpg',
+		'images/realm-of-dreams.jpg',
+	],
 
-$$(document).on('page:init', '.page[data-name="page2"]',function(e){
-	
+	type: 'page',
+	backLinkText: 'Back'
 });
+
 
 $(document).ready(function(){
 var quoteSource = [
